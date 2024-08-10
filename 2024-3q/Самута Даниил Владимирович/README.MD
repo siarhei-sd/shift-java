@@ -1,0 +1,1 @@
+https://trello.com/c/NEpvkZQF/11-%D1%81%D0%B0%D0%BC%D1%83%D1%82%D0%B0-%D0%B4%D0%B0%D0%BD%D0%B8%D0%B8%D0%BB

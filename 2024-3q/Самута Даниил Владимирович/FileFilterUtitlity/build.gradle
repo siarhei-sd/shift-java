@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.dezzzl'
+version = '1.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    archiveBaseName = 'util'
+    archiveFileName = 'util.jar'
+    def jars = configurations.runtimeClasspath.files.collect { "lib/$it.name" }
+
+    manifest {
+        attributes 'Main-Class': 'org.dezzzl.Main',
+                'Class-Path': jars.join(' ')
+    }
+}
+
+task copyAllDependecies(type: Copy) {
+    from(configurations.runtimeClasspath.files)
+    into("$buildDir/libs/lib")
+}
+jar.dependsOn copyAllDependecies
+
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.34'
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
+}
