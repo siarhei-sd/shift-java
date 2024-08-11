@@ -1,0 +1,72 @@
+Java версия jdk - 18.0.2.1
+Maven (система сборки) версия - 3.8.3
+
+После сборки текстовые файлы на вход находятся в папке /target/src/main/resources
+Файлы на выходе сохраняются туда же.
+
+Библиотеки:
+commons-lang3
+Зависимость:
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.14.0</version>
+    </dependency>
+	
+Плагины:
+maven-jar-plugin
+     <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.1.1</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>com.korona.script.App</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+	  
+maven-shade-plugin	  
+     <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>3.1.0</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+	  
+maven-resources-plugin
+ <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>3.0.1</version>
+        <executions>
+          <execution>
+            <id>copy-resources</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>
+                ${basedir}/target/src/main/resources
+              </outputDirectory>
+              <resources>
+                <resource>
+                  <directory>src/main/resources</directory>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>	  
+
+	
