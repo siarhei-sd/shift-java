@@ -1,0 +1,12 @@
+plugins {
+    id 'java'
+}
+
+group "by.pashko.filter.utility"
+version "1.0.0"
+
+jar {
+    manifest {
+        attributes "Main-Class": "by.pashko.filter.utility.Main"
+    }
+}
