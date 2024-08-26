@@ -1,0 +1,5 @@
+Инструкция для запуска:
+В проекте используется Java 17.
+Система сборки gradle 8.4
+Точка входа /src/main/java/team/korona/shift/Main.java
+Для сборки jar файла используется gradle таска ./gradlew fatJar
