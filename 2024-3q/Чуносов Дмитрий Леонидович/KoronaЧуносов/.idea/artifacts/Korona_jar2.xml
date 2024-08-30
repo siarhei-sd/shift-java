@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Korona:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/Korona_jar2</output-path>
+    <root id="archive" name="Korona.jar">
+      <element id="module-output" name="Korona" />
+    </root>
+  </artifact>
+</component>
