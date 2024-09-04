@@ -1,0 +1,7 @@
+
+`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ
+7
+java:S1116"Remove this empty statement.(Åñ­õşÿÿÿÿ
+A
+java:S1075"&Remove this hard-coded path-delimiter.(³ş‚“ùÿÿÿÿ
+\	java:S899"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ
