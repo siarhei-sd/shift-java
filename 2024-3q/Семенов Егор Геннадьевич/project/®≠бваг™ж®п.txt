@@ -1,0 +1,8 @@
+1) Версия Java - 21
+2) Система сборки - Gradle 8.5, в проект прилагается gradle wrapper.
+3) Сторонние библиотеки - lombok, указан в build.gradle
+4) Инструкция по запуску:
+команда "gradlew.bat jar" на Windows
+команда "./gradlew jar" на Linux
+в папке build/libs появится file-content-filtering-1.0.jar, переносим его в корневую папку проекта и запускаем:
+команда "java -jar file-content-filtering-1.0.jar -f -p result_ in1.txt in2.txt"
