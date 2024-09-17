@@ -1,0 +1,5 @@
+-s -f -p -b 1.txt 222.txt -lala -o "D:\definitelyNewFolder\outfiles"
+-s -f -p -b 111.txt 222.txt -lala -o "\33\22\11" 3333.txt -a
+-s -f -p -new- 111.txt -llol -o "D:\test\12.09" 3333.txt -a
+ -p -new1-  -llol -o "D:\KoronaTestOut\12.09\Con" 3333.txt -S -f
+ -o "Новая папка\результаты" -f -p "13.09_" data1.txt data2.txt
