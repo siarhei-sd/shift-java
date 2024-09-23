@@ -1,0 +1,8 @@
+Использованы: Java 21, Maven 3.9.9
+Зависимости: commons-cli 1.8.0, maven-jar-plugin 3.1.0, maven-shade-plugin 3.2.4
+Зависимости уже перечислены в pom.xml
+
+Для сборки и запуска необходимо запустить следующие команды в папке проекта:
+mvn clean
+mvn package
+java -jar ".\target\fileutil-1.0.jar" -p "prefix_" -f aaa.txt bbb.txt
