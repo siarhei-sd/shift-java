@@ -1,0 +1,1 @@
+https://trello.com/c/gKTMpUft/67-%D0%B6%D0%BE%D0%B3%D0%BB%D0%BE-%D0%BD%D0%B0%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0
